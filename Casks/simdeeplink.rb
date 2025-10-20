@@ -1,6 +1,6 @@
 cask "simdeeplink" do
-  version "0.0.1"
-  sha256 "f6d4bcfd62a57ff112638236d847d43f72c9ff7dc6214ae28fedc994c5137b05"
+  version "0.0.2"
+  sha256 "e68713ff99512c4ae7ba7ded510bc7ad3b7d4f65c77a20d2c15c97d0dd60c790"
 
   url "https://github.com/alifu/SimDeeplink/releases/download/#{version}/SimDeeplink.zip"
   name "SimDeeplink"
@@ -12,5 +12,10 @@ cask "simdeeplink" do
   zap trash: [
     "~/Library/Preferences/AppWork.SimDeeplink.plist",
     "~/Library/Application Support/SimDeeplink",
+  ]
+
+  uninstall delete: [
+    "/Applications/SimDeeplink.app",
+    "~/Applications/SimDeeplink.app",
   ]
 end

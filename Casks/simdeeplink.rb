@@ -9,15 +9,9 @@ cask "simdeeplink" do
 
   app "SimDeeplink.app"
 
-  uninstall quit: "AppWork.SimDeeplink",
-            delete: [
-              "/Applications/SimDeeplink.app",
-              "~/Applications/SimDeeplink.app",
-            ]
-
+  uninstall quit: "AppWork.SimDeeplink"
+  
   zap trash: [
-    "/Applications/SimDeeplink.app",
-    "~/Applications/SimDeeplink.app",
     "~/Library/Preferences/AppWork.SimDeeplink.plist",
     "~/Library/Application Support/SimDeeplink",
   ]

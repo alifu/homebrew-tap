@@ -1,6 +1,6 @@
 cask "lf-paper" do
-  version "1.0"
-  sha256 "ec16bf212e31ac1d5fdb071dfb56399a1acf79798fb8d930069d09046ef3dec9"
+  version "1.0.1"
+  sha256 "a0db8a35f9dca691339394e79cb3f61ea3a73f31f62c123aba8f91e7d016062b"
 
   url "https://github.com/alifu/LF-Paper/releases/download/#{version}/LF-Paper.zip"
   name "LF-Paper"

@@ -1,18 +1,20 @@
 cask "simdeeplink" do
-  version "0.0.5"
-  sha256 "ee1336146c8e1722e9bbaa8d49d4ff4de0006cd024699c99688faca5773410fb"
+  version "0.0.6"
+  sha256 "e187928d7ef1dcaae906deb556751fcc8c9786096b5904489c65abdb08723323"
 
-  url "https://github.com/alifu/SimDeeplink/releases/download/#{version}/SimDeeplink.zip"
+  url "https://github.com/alifu/SimDeeplink/releases/download/v#{version}/SimDeeplink.zip"
   name "SimDeeplink"
-  desc "SimDeeplink (Deeplink Runner) is a desktop utility designed to make testing and running app deeplinks in Simulator effortless."
+  desc "Menu bar app that runs deeplinks on iOS simulators and Android emulators"
   homepage "https://github.com/alifu/SimDeeplink"
 
-  app "SimDeeplink.app"
+  depends_on macos: :sonoma
 
-  uninstall quit: "AppWork.SimDeeplink"
+  app "stage/SimDeeplink.app"
+
+  uninstall quit: "com.alifu.SimDeeplink"
 
   zap trash: [
-    "~/Library/Preferences/AppWork.SimDeeplink.plist",
-    "~/Library/Application Support/SimDeeplink",
+    "~/Library/Preferences/com.alifu.SimDeeplink.plist",
+    "~/Library/Saved Application State/com.alifu.SimDeeplink.savedState",
   ]
 end

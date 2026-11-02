@@ -1,6 +1,6 @@
 cask "simdeeplink" do
-  version "0.0.7"
-  sha256 "6db621d06a628e9b3dd8886e0dec9c1e83f0a2bb2db8ef1f09e3c8a45ac4635d"
+  version "0.0.8"
+  sha256 "cf7981fd6879f1e8afe384133676a2015b8614625ae42e709159255e0bfee9f5"
 
   url "https://github.com/alifu/SimDeeplink/releases/download/v#{version}/SimDeeplink.zip"
   name "SimDeeplink"

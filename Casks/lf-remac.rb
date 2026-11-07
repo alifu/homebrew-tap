@@ -1,6 +1,6 @@
 cask "lf-remac" do
-  version "0.1.0"
-  sha256 "96b485048c34604cb221ce69b008f6b8b2c94de5a24cd8d05be4220e001c4ff4"
+  version "0.1.1"
+  sha256 "0ae2ad07763c91b0c32ec6a983fef740d1564d905c323d7cee0fbdc08dbdcc89"
 
   url "https://github.com/alifu/LF-ReMac/releases/download/v#{version}/LF-ReMac-#{version}.zip"
   name "LF-ReMac"

@@ -2,9 +2,9 @@
 # Copy to Casks/lf-aiworkflow.rb in alifu/homebrew-tap. Not notarized: postflight_steps removes the quarantine flag (TD-002).
 # Replace the sha256 and version with the output of scripts/build-release.sh (its "cask:" line) after uploading the zip to the GitHub release.
 cask "lf-aiworkflow" do
-  version "1.0.2"
+  version "1.0.3"
   # PLACEHOLDER: replace with the sha256 printed by scripts/build-release.sh for this version.
-  sha256 "ca3c4ac3812ff2a019c2727647a709dc6d15e5630ad0da39c484e942a2740540"
+  sha256 "7ec8415dfa909ccd47298a3f5c0d551a811dfaf90346860ffc33afed6b469dda"
 
   url "https://github.com/alifu/LF-AIWorkflow/releases/download/v#{version}/LF-AIWorkflow-#{version}.zip"
   name "LF-AIWorkflow"

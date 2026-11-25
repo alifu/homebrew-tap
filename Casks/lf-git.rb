@@ -1,6 +1,6 @@
 cask "lf-git" do
-  version "0.6.1"
-  sha256 "bff05ae377bdac93506e172c8b9ba243b23b2c80e069ba9cb948ad72e18325fb"
+  version "0.7.0"
+  sha256 "a23792040d6f23e7006679dc536c68cdd0f8a54bab34bc4e5b9131629a891d15"
 
   url "https://github.com/alifu/LF-Git/releases/download/v#{version}/LF-Git.zip"
   name "LF-Git"
